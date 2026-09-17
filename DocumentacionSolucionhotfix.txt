@@ -72,13 +72,14 @@ git branch -a
 
 El resultado esperado debe mostrar las ramas:
 
-* hotfix
+  MiRama
   bugfix
   feature
+* hotfix
   master
-  remotes/origin/hotfix
   remotes/origin/bugfix
   remotes/origin/feature
+  remotes/origin/hotfix
   remotes/origin/master
 
 De esta manera se verifica que la rama "hotfix" existe localmente y que fue publicada correctamente en el repositorio remoto de GitHub.
