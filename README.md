@@ -85,10 +85,11 @@ git branch -a
 El resultado esperado debe mostrar las ramas:
 
 ```bash
-- ** * feature*
-- master
-- remotes/origin/feature
-- remotes/origin/master
+MiRama
+master
+* feature
+remotes/origin/feature
+remotes/origin/master
 ```
 
 De esta manera se verifica que la rama **feature** fue creada localmente y publicada correctamente en GitHub.
