@@ -72,9 +72,12 @@ git branch -a
 
 El resultado esperado debe mostrar las ramas:
 
+  MiRama
 * bugfix
+  feature
   master
   remotes/origin/bugfix
+  remotes/origin/feature
   remotes/origin/master
 
 De esta manera se verifica que la rama "bugfix" existe localmente y que fue publicada correctamente en el repositorio remoto de GitHub.
