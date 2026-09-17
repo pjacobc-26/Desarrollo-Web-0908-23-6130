@@ -1,0 +1,83 @@
+DOCUMENTACIÓN DE LA RAMA BUGFIX
+================================
+
+1. CREACIÓN DE LA RAMA
+----------------------
+
+El trabajo de esta etapa se realizó a partir de la rama principal "master".
+
+Primero se verificó el estado del repositorio mediante el siguiente comando:
+
+git status
+
+Posteriormente, se cambió a la rama principal:
+
+git checkout master
+
+A continuación, se creó la rama "bugfix" y se realizó el cambio hacia ella mediante:
+
+git checkout -b bugfix
+
+La creación de la rama se verificó con:
+
+git branch
+
+El resultado permitió comprobar que la rama "bugfix" se encontraba activa.
+
+
+2. CREACIÓN DEL ARCHIVO
+-----------------------
+
+Estando ubicado en la rama "bugfix", se creó el archivo:
+
+DocumentacionSolucion.txt
+
+Este archivo tiene como finalidad documentar el proceso realizado durante el ejercicio de ramas y versionamiento con Git.
+
+
+3. REGISTRO DE LOS CAMBIOS
+---------------------------
+
+Después de crear y completar el archivo "DocumentacionSolucion.txt", se agregó al área de preparación mediante:
+
+git add DocumentacionSolucion.txt
+
+Posteriormente, se creó un commit para registrar los cambios:
+
+git commit -m "docs: add bugfix branch documentation"
+
+El commit permitió registrar localmente la creación y documentación correspondiente a la rama "bugfix".
+
+
+4. PUBLICACIÓN DE LA RAMA
+-------------------------
+
+Para publicar la rama "bugfix" en el repositorio remoto de GitHub se utilizó:
+
+git push -u origin bugfix
+
+El parámetro "-u" establece la relación entre la rama local "bugfix" y la rama remota "origin/bugfix".
+
+A partir de este momento, los cambios posteriores realizados en esta rama pueden sincronizarse utilizando:
+
+git push
+
+
+5. VERIFICACIÓN
+---------------
+
+Para comprobar que la rama local y la rama remota fueron creadas correctamente, se puede utilizar:
+
+git branch -a
+
+El resultado esperado debe mostrar las ramas:
+
+  MiRama
+* bugfix
+  feature
+  master
+  remotes/origin/bugfix
+  remotes/origin/feature
+  remotes/origin/master
+
+De esta manera se verifica que la rama "bugfix" existe localmente y que fue publicada correctamente en el repositorio remoto de GitHub.
